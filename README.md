@@ -15,4 +15,4 @@ launch the demo
 add the motion planner topic to rviz using the add button found on the bottom
 - the interactive marker is missing. to manipulate joints you will have to slide them in joints tab
 - any movement to J3 that causes it to collide with base at any point will result in planning and execution failure
-- hit reset on bottom left after each exetute
+- hit reset on bottom left after each execute
