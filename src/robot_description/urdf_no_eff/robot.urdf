@@ -1,0 +1,1789 @@
+<?xml version="1.0" ?>
+<!-- Generated using onshape-to-robot -->
+<!-- Onshape document_id: b8ac75c78771d7c79226a5ed -->
+<robot name="midas">
+  <!-- Link base -->
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.00294373 0.00292758 -0.0402292" rpy="0 0 0"/>
+      <mass value="1.7134"/>
+      <inertia ixx="0.0021534" ixy="0.0003929" ixz="-5.56188e-05" iyy="0.0021574" iyz="5.59923e-05" izz="0.00217741"/>
+    </inertial>
+    <!-- Part 23hs22_2804s -->
+    <visual>
+      <origin xyz="-1.03413e-07 6.63545e-08 -0.0771" rpy="-1.5708 4.40065e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/23hs22_2804s.stl"/>
+      </geometry>
+      <material name="23hs22_2804s_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.03413e-07 6.63545e-08 -0.0771" rpy="-1.5708 4.40065e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/23hs22_2804s.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe -->
+    <visual>
+      <origin xyz="-0.0333331 6.63545e-08 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0333331 6.63545e-08 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2 -->
+    <visual>
+      <origin xyz="1.11242e-15 -0.033333 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.11242e-15 -0.033333 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composite_part_1 -->
+    <visual>
+      <origin xyz="-0.0887262 0.0907454 -0.0779964" rpy="1.38778e-16 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1.stl"/>
+      </geometry>
+      <material name="composite_part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0887262 0.0907454 -0.0779964" rpy="1.38778e-16 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composite_part_1_2 -->
+    <visual>
+      <origin xyz="-0.0526638 0.0504404 -0.07935" rpy="1.38778e-16 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1.stl"/>
+      </geometry>
+      <material name="composite_part_1_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0526638 0.0504404 -0.07935" rpy="1.38778e-16 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composite_part_1_3 -->
+    <visual>
+      <origin xyz="-0.0717557 0.0695322 -0.0781" rpy="1.38778e-16 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1.stl"/>
+      </geometry>
+      <material name="composite_part_1_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0717557 0.0695322 -0.0781" rpy="1.38778e-16 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1 -->
+    <visual>
+      <origin xyz="1.89029e-05 -0.000121002 -0.0796" rpy="-4.21248e-16 -1.38778e-16 2.35619"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1.stl"/>
+      </geometry>
+      <material name="part_1_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.89029e-05 -0.000121002 -0.0796" rpy="-4.21248e-16 -1.38778e-16 2.35619"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_2 -->
+    <visual>
+      <origin xyz="-1.04083e-16 5.55112e-17 0.002" rpy="-1.5708 -1.11022e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.04083e-16 5.55112e-17 0.002" rpy="-1.5708 -1.11022e-16 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_2 -->
+    <visual>
+      <origin xyz="1.89029e-05 -0.000149286 -0.0771" rpy="-1.5708 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__2.stl"/>
+      </geometry>
+      <material name="part_1_2_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.89029e-05 -0.000149286 -0.0771" rpy="-1.5708 -4.21248e-16 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_3 -->
+    <visual>
+      <origin xyz="0.033333 -1.2715e-15 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.033333 -1.2715e-15 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_4 -->
+    <visual>
+      <origin xyz="-0.033333 -1.34783e-15 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.033333 -1.34783e-15 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_5 -->
+    <visual>
+      <origin xyz="1.40385e-15 0.033333 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2_5_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.40385e-15 0.033333 -0.0187" rpy="2.1881e-16 6.62109e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/square_thin_nut_grade_b_m3x0_5__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_2 -->
+    <visual>
+      <origin xyz="-1.03413e-07 0.0333331 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.03413e-07 0.0333331 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_3 -->
+    <visual>
+      <origin xyz="-1.03413e-07 -0.0333329 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-1.03413e-07 -0.0333329 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_4 -->
+    <visual>
+      <origin xyz="0.0333329 6.63545e-08 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+      <material name="hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0333329 6.63545e-08 -0.02669" rpy="-3.14159 1.50227e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_countersunk_head_screw_m3x0_5_x_10__1cb4a3dadc02821627dad8d7e6578bbe.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83 -->
+    <visual>
+      <origin xyz="0.0290184 0.0288225 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0290184 0.0288225 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658 -->
+    <visual>
+      <origin xyz="-0.00214819 -0.00191027 -0.0126" rpy="-1.5708 3.01035e-15 2.29764"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+      <material name="cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00214819 -0.00191027 -0.0126" rpy="-1.5708 3.01035e-15 2.29764"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_3 -->
+    <visual>
+      <origin xyz="-0.00804641 -0.022611 -0.0126" rpy="-1.33803e-15 7.94647e-16 0.160178"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+      <material name="part_1_3_material">
+        <color rgba="0.105882 0.333333 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00804641 -0.022611 -0.0126" rpy="-1.33803e-15 7.94647e-16 0.160178"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part planet -->
+    <visual>
+      <origin xyz="-0.0317392 -0.0264388 -0.0086" rpy="1.5708 1.07965e-15 0.160178"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+      <material name="planet_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0317392 -0.0264388 -0.0086" rpy="1.5708 1.07965e-15 0.160178"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_4 -->
+    <visual>
+      <origin xyz="8.19134e-19 -1.71353e-17 0.0091" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__4.stl"/>
+      </geometry>
+      <material name="part_1_4_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="8.19134e-19 -1.71353e-17 0.0091" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part top_cover -->
+    <visual>
+      <origin xyz="0 0 -0.0086" rpy="1.5708 8.30137e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/top_cover.stl"/>
+      </geometry>
+      <material name="top_cover_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.0086" rpy="1.5708 8.30137e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/top_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part planet_2 -->
+    <visual>
+      <origin xyz="0.0190985 -0.019236 -0.0086" rpy="1.5708 1.52674e-15 1.38191"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+      <material name="planet_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0190985 -0.019236 -0.0086" rpy="1.5708 1.52674e-15 1.38191"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bottom_cover -->
+    <visual>
+      <origin xyz="1.27535e-15 -1.31647e-15 -0.0086" rpy="1.5708 -9.85939e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/bottom_cover.stl"/>
+      </geometry>
+      <material name="bottom_cover_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.27535e-15 -1.31647e-15 -0.0086" rpy="1.5708 -9.85939e-16 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/bottom_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_2 -->
+    <visual>
+      <origin xyz="0.00179808 0.00159893 -0.0126" rpy="-1.5708 -3.01035e-15 -0.843955"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+      <material name="cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00179808 0.00159893 -0.0126" rpy="-1.5708 -3.01035e-15 -0.843955"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part planet_3 -->
+    <visual>
+      <origin xyz="-0.0193863 0.0419666 -0.0086" rpy="1.5708 -1.17467e-15 -1.41062"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+      <material name="planet_3_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0193863 0.0419666 -0.0086" rpy="1.5708 -1.17467e-15 -1.41062"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2 -->
+    <visual>
+      <origin xyz="-0.00951764 -0.00810336 0.0129" rpy="1.66324e-15 7.29843e-17 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00951764 -0.00810336 0.0129" rpy="1.66324e-15 7.29843e-17 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part carrier -->
+    <visual>
+      <origin xyz="-4.6699e-17 -1.72386e-17 -0.0086" rpy="1.5708 7.29843e-17 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/carrier.stl"/>
+      </geometry>
+      <material name="carrier_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-4.6699e-17 -1.72386e-17 -0.0086" rpy="1.5708 7.29843e-17 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/carrier.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_2 -->
+    <visual>
+      <origin xyz="0.0290184 0.0288225 -0.0188" rpy="3.14159 -2.20295e-16 -0.523599"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0290184 0.0288225 -0.0188" rpy="3.14159 -2.20295e-16 -0.523599"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_3 -->
+    <visual>
+      <origin xyz="-0.00371748 -0.00330575 -0.0126" rpy="-1.5708 3.01035e-15 2.29764"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00371748 -0.00330575 -0.0126" rpy="-1.5708 3.01035e-15 2.29764"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part sun -->
+    <visual>
+      <origin xyz="-2.16011e-16 -1.91899e-15 -0.0166" rpy="-1.5708 7.64189e-17 -2.67655"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/sun.stl"/>
+      </geometry>
+      <material name="sun_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.16011e-16 -1.91899e-15 -0.0166" rpy="-1.5708 7.64189e-17 -2.67655"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/sun.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_5 -->
+    <visual>
+      <origin xyz="0.0236049 0.00433709 -0.0126" rpy="1.20174e-15 1.93927e-15 1.38191"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+      <material name="part_1_5_material">
+        <color rgba="0.105882 0.333333 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0236049 0.00433709 -0.0126" rpy="1.20174e-15 1.93927e-15 1.38191"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_6 -->
+    <visual>
+      <origin xyz="-0.0155585 0.0182739 -0.0126" rpy="-2.2074e-15 -1.17467e-15 -1.41062"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+      <material name="part_1_6_material">
+        <color rgba="0.105882 0.333333 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0155585 0.0182739 -0.0126" rpy="-2.2074e-15 -1.17467e-15 -1.41062"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_4 -->
+    <visual>
+      <origin xyz="-0.0408997 0.000138475 -0.0188" rpy="3.14159 -1.33379e-15 1.8326"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0408997 0.000138475 -0.0188" rpy="3.14159 -1.33379e-15 1.8326"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_5 -->
+    <visual>
+      <origin xyz="0.0408997 -0.000138475 -0.0188" rpy="3.14159 -6.85177e-16 -1.309"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_5_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0408997 -0.000138475 -0.0188" rpy="3.14159 -6.85177e-16 -1.309"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_6 -->
+    <visual>
+      <origin xyz="-0.0290184 -0.0288225 -0.0188" rpy="3.14159 -3.62524e-16 2.61799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_6_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0290184 -0.0288225 -0.0188" rpy="3.14159 -3.62524e-16 2.61799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_7 -->
+    <visual>
+      <origin xyz="-0.0288225 0.0290184 -0.0188" rpy="3.14159 -7.22918e-16 1.0472"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_7_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0288225 0.0290184 -0.0188" rpy="3.14159 -7.22918e-16 1.0472"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_8 -->
+    <visual>
+      <origin xyz="0.000138475 0.0408997 -0.0188" rpy="3.14159 -2.36744e-16 0.261799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_8_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000138475 0.0408997 -0.0188" rpy="3.14159 -2.36744e-16 0.261799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_9 -->
+    <visual>
+      <origin xyz="-0.000138475 -0.0408997 -0.0188" rpy="3.14159 -1.80511e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_9_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000138475 -0.0408997 -0.0188" rpy="3.14159 -1.80511e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_10 -->
+    <visual>
+      <origin xyz="0.0288225 -0.0290184 -0.0188" rpy="3.14159 -1.30941e-15 -2.0944"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_10_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0288225 -0.0290184 -0.0188" rpy="3.14159 -1.30941e-15 -2.0944"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_11 -->
+    <visual>
+      <origin xyz="0.00951764 0.00810336 0.0129" rpy="1.69199e-15 7.95393e-16 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_11_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00951764 0.00810336 0.0129" rpy="1.69199e-15 7.95393e-16 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_12 -->
+    <visual>
+      <origin xyz="0.00810336 -0.00951764 0.0129" rpy="1.69199e-15 7.95393e-16 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_12_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00810336 -0.00951764 0.0129" rpy="1.69199e-15 7.95393e-16 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_13 -->
+    <visual>
+      <origin xyz="-0.00810336 0.00951764 0.0129" rpy="1.69199e-15 7.95393e-16 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_13_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.00810336 0.00951764 0.0129" rpy="1.69199e-15 7.95393e-16 2.27611"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_14 -->
+    <visual>
+      <origin xyz="0.00371748 0.00330575 -0.0126" rpy="1.5708 3.01035e-15 2.29764"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_14_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.00371748 0.00330575 -0.0126" rpy="1.5708 3.01035e-15 2.29764"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_2 -->
+    <visual>
+      <origin xyz="0.0408997 -0.000138475 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0408997 -0.000138475 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_3 -->
+    <visual>
+      <origin xyz="-0.0288225 0.0290184 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0288225 0.0290184 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_4 -->
+    <visual>
+      <origin xyz="0.000138475 0.0408997 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.000138475 0.0408997 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_5 -->
+    <visual>
+      <origin xyz="-0.0290184 -0.0288225 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_5_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0290184 -0.0288225 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_6 -->
+    <visual>
+      <origin xyz="-0.0408997 0.000138475 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_6_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0408997 0.000138475 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_7 -->
+    <visual>
+      <origin xyz="0.0288225 -0.0290184 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_7_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0288225 -0.0290184 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_8 -->
+    <visual>
+      <origin xyz="-0.000138475 -0.0408997 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_8_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.000138475 -0.0408997 -0.0101843" rpy="1.32206e-16 -8.30137e-16 -3.88578e-16"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link platform -->
+  <link name="platform">
+    <inertial>
+      <origin xyz="0.0214066 0.0185764 -0.0348969" rpy="0 0 0"/>
+      <mass value="1.39044"/>
+      <inertia ixx="0.00173621" ixy="-0.00120608" ixz="4.85893e-05" iyy="0.00209106" iyz="4.31003e-05" izz="0.0030861"/>
+    </inertial>
+    <!-- Part platform -->
+    <visual>
+      <origin xyz="-2.1609e-17 1.34813e-17 -0.006" rpy="1.13704e-16 3.20479e-17 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/platform.stl"/>
+      </geometry>
+      <material name="platform_material">
+        <color rgba="0.231373 0.380392 0.705882 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-2.1609e-17 1.34813e-17 -0.006" rpy="1.13704e-16 3.20479e-17 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/platform.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 23hs22_2804s_2 -->
+    <visual>
+      <origin xyz="0.0539705 0.0467515 -0.03657" rpy="0.856948 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/23hs22_2804s.stl"/>
+      </geometry>
+      <material name="23hs22_2804s_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0539705 0.0467515 -0.03657" rpy="0.856948 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/23hs22_2804s.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf -->
+    <visual>
+      <origin xyz="-0.0763507 -0.0349547 -0.06014" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+      <material name="hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0763507 -0.0349547 -0.06014" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part flange2 -->
+    <visual>
+      <origin xyz="-0.0817042 -0.0707756 -0.03657" rpy="-3.14159 -0.638799 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/flange2.stl"/>
+      </geometry>
+      <material name="flange2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0817042 -0.0707756 -0.03657" rpy="-3.14159 -0.638799 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/flange2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3 -->
+    <visual>
+      <origin xyz="-0.0333168 -0.0600439 -0.06014" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0333168 -0.0600439 -0.06014" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part composite_part_1_4 -->
+    <visual>
+      <origin xyz="-0.0273337 -0.00410223 -0.0226052" rpy="3.14159 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1__2.stl"/>
+      </geometry>
+      <material name="composite_part_1_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0273337 -0.00410223 -0.0226052" rpy="3.14159 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/composite_part_1__2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_2 -->
+    <visual>
+      <origin xyz="-0.0641816 -0.0244133 -0.06014" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0641816 -0.0244133 -0.06014" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_3 -->
+    <visual>
+      <origin xyz="-0.0641816 -0.0244133 -0.013" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0641816 -0.0244133 -0.013" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_4 -->
+    <visual>
+      <origin xyz="-0.0333168 -0.0600439 -0.013" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0333168 -0.0600439 -0.013" rpy="1.5708 -3.20479e-17 2.28464"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m4__a8228d9ce5dcc05f24da0a2f74d882f3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_2 -->
+    <visual>
+      <origin xyz="-0.0763507 -0.0349547 -0.013" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+      <material name="hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_2_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.0763507 -0.0349547 -0.013" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_3 -->
+    <visual>
+      <origin xyz="-0.045486 -0.0705854 -0.013" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+      <material name="hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.045486 -0.0705854 -0.013" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_4 -->
+    <visual>
+      <origin xyz="-0.045486 -0.0705854 -0.06014" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+      <material name="hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.045486 -0.0705854 -0.06014" rpy="1.5708 6.8453e-16 -0.856948"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_socket_head_cap_screw_m3x0_50_x_16__ac958a28b2a0cd32159ce84378065ccf.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j2 -->
+  <link name="j2">
+    <inertial>
+      <origin xyz="-0.176577 1.195e-05 -0.0203533" rpy="0 0 0"/>
+      <mass value="1.74979"/>
+      <inertia ixx="0.00166494" ixy="2.94744e-07" ixz="-0.000302237" iyy="0.00457993" iyz="7.59662e-07" izz="0.00397578"/>
+    </inertial>
+    <!-- Part 23hs22_2804s_3 -->
+    <visual>
+      <origin xyz="-0.1906 -1.67e-16 -0.062" rpy="-1.5708 1.29249e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/23hs22_2804s.stl"/>
+      </geometry>
+      <material name="23hs22_2804s_3_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 -1.67e-16 -0.062" rpy="-1.5708 1.29249e-16 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/23hs22_2804s.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part upperarm -->
+    <visual>
+      <origin xyz="0 -1.95001e-19 0" rpy="1.5708 -0 -1.97215e-31"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/upperarm.stl"/>
+      </geometry>
+      <material name="upperarm_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 -1.95001e-19 0" rpy="1.5708 -0 -1.97215e-31"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/upperarm.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_9 -->
+    <visual>
+      <origin xyz="-0.190462 0.0408997 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_9_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.190462 0.0408997 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_3 -->
+    <visual>
+      <origin xyz="-0.189856 -0.00277674 0.0085" rpy="-1.5708 3.91683e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+      <material name="cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_3_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.189856 -0.00277674 0.0085" rpy="-1.5708 3.91683e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_7 -->
+    <visual>
+      <origin xyz="-0.1786 -0.0207846 0.0085" rpy="-9.19058e-16 -7.69061e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+      <material name="part_1_7_material">
+        <color rgba="0.105882 0.333333 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1786 -0.0207846 0.0085" rpy="-9.19058e-16 -7.69061e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part planet_4 -->
+    <visual>
+      <origin xyz="-0.195571 -0.0377552 0.0125" rpy="1.5708 -2.85698e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+      <material name="planet_4_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.195571 -0.0377552 0.0125" rpy="1.5708 -2.85698e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_8 -->
+    <visual>
+      <origin xyz="-0.1906 3.07556e-17 0.0302" rpy="1.21929e-14 -6.71695e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__4.stl"/>
+      </geometry>
+      <material name="part_1_8_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 3.07556e-17 0.0302" rpy="1.21929e-14 -6.71695e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__4.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part top_cover_2 -->
+    <visual>
+      <origin xyz="-0.1906 2.96458e-16 0.0125" rpy="1.5708 2.38771e-14 -2.35619"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/top_cover.stl"/>
+      </geometry>
+      <material name="top_cover_2_material">
+        <color rgba="0.972549 0.529412 0.00392157 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 2.96458e-16 0.0125" rpy="1.5708 2.38771e-14 -2.35619"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/top_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part planet_5 -->
+    <visual>
+      <origin xyz="-0.168457 -0.000966777 0.0125" rpy="1.5708 -1.72058e-14 2.00713"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+      <material name="planet_5_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.168457 -0.000966777 0.0125" rpy="1.5708 -1.72058e-14 2.00713"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part bottom_cover_2 -->
+    <visual>
+      <origin xyz="-0.1906 -7.51986e-17 0.0125" rpy="1.5708 2.96588e-15 -2.94799e-15"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/bottom_cover.stl"/>
+      </geometry>
+      <material name="bottom_cover_2_material">
+        <color rgba="0.768627 0.886275 0.952941 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 -7.51986e-17 0.0125" rpy="1.5708 2.96588e-15 -2.94799e-15"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/bottom_cover.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_4 -->
+    <visual>
+      <origin xyz="-0.191223 0.00232419 0.0085" rpy="-1.5708 -4.3054e-15 0.261799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+      <material name="cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658_4_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.191223 0.00232419 0.0085" rpy="-1.5708 -4.3054e-15 0.261799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/cup_point_hex_socket_set_screw_m3x0_5_x_3__9f0cdd32da56107da969c8cfc1d76658.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part planet_6 -->
+    <visual>
+      <origin xyz="-0.231571 0.0169706 0.0125" rpy="1.5708 7.24598e-15 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+      <material name="planet_6_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.231571 0.0169706 0.0125" rpy="1.5708 7.24598e-15 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/planet.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_15 -->
+    <visual>
+      <origin xyz="-0.1906 -0.0125 0.034" rpy="-1.54879e-14 8.35102e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_15_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 -0.0125 0.034" rpy="-1.54879e-14 8.35102e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part carrier_2 -->
+    <visual>
+      <origin xyz="-0.1906 2.8075e-16 0.0125" rpy="1.5708 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/carrier.stl"/>
+      </geometry>
+      <material name="carrier_2_material">
+        <color rgba="0.647059 0.647059 0.647059 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 2.8075e-16 0.0125" rpy="1.5708 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/carrier.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_16 -->
+    <visual>
+      <origin xyz="-0.190462 0.0408997 0.0023" rpy="-3.14159 -1.70061e-15 0.261799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_16_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.190462 0.0408997 0.0023" rpy="-3.14159 -1.70061e-15 0.261799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_17 -->
+    <visual>
+      <origin xyz="-0.189312 -0.00480519 0.0085" rpy="-1.5708 4.19785e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_17_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.189312 -0.00480519 0.0085" rpy="-1.5708 4.19785e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part sun_2 -->
+    <visual>
+      <origin xyz="-0.1906 3.26521e-17 0.0045" rpy="-1.5708 8.55622e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/sun.stl"/>
+      </geometry>
+      <material name="sun_2_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 3.26521e-17 0.0045" rpy="-1.5708 8.55622e-15 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/sun.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_9 -->
+    <visual>
+      <origin xyz="-0.1786 0.0207846 0.0085" rpy="-8.17619e-16 -9.80746e-15 2.00713"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+      <material name="part_1_9_material">
+        <color rgba="0.105882 0.333333 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1786 0.0207846 0.0085" rpy="-8.17619e-16 -9.80746e-15 2.00713"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part part_1_10 -->
+    <visual>
+      <origin xyz="-0.2146 4.24303e-11 0.0085" rpy="6.91262e-15 7.6094e-15 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+      <material name="part_1_10_material">
+        <color rgba="0.105882 0.333333 0 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2146 4.24303e-11 0.0085" rpy="6.91262e-15 7.6094e-15 -0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/part_1__3.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_18 -->
+    <visual>
+      <origin xyz="-0.219618 -0.0288225 0.0023" rpy="3.14159 -2.04187e-15 2.61799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_18_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.219618 -0.0288225 0.0023" rpy="3.14159 -2.04187e-15 2.61799"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_19 -->
+    <visual>
+      <origin xyz="-0.161582 0.0288225 0.0023" rpy="-3.14159 5.11829e-15 -0.523599"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_19_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.161582 0.0288225 0.0023" rpy="-3.14159 5.11829e-15 -0.523599"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_20 -->
+    <visual>
+      <origin xyz="-0.190738 -0.0408997 0.0023" rpy="3.14159 4.63088e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_20_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.190738 -0.0408997 0.0023" rpy="3.14159 4.63088e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_21 -->
+    <visual>
+      <origin xyz="-0.2315 0.000138475 0.0023" rpy="3.14159 -6.85114e-15 1.8326"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_21_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2315 0.000138475 0.0023" rpy="3.14159 -6.85114e-15 1.8326"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_22 -->
+    <visual>
+      <origin xyz="-0.219423 0.0290184 0.0023" rpy="-3.14159 -6.64008e-15 1.0472"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_22_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.219423 0.0290184 0.0023" rpy="-3.14159 -6.64008e-15 1.0472"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_23 -->
+    <visual>
+      <origin xyz="-0.161777 -0.0290184 0.0023" rpy="3.14159 9.53437e-15 -2.0944"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_23_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.161777 -0.0290184 0.0023" rpy="3.14159 9.53437e-15 -2.0944"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_24 -->
+    <visual>
+      <origin xyz="-0.1497 -0.000138475 0.0023" rpy="-3.14159 9.79486e-15 -1.309"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_24_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1497 -0.000138475 0.0023" rpy="-3.14159 9.79486e-15 -1.309"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_25 -->
+    <visual>
+      <origin xyz="-0.1906 0.0125 0.034" rpy="-7.88144e-15 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_25_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1906 0.0125 0.034" rpy="-7.88144e-15 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_26 -->
+    <visual>
+      <origin xyz="-0.1781 -2.2099e-11 0.034" rpy="-7.88144e-15 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_26_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1781 -2.2099e-11 0.034" rpy="-7.88144e-15 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_27 -->
+    <visual>
+      <origin xyz="-0.2031 2.20989e-11 0.034" rpy="-7.88144e-15 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_27_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2031 2.20989e-11 0.034" rpy="-7.88144e-15 8.64856e-16 3.14159"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_28 -->
+    <visual>
+      <origin xyz="-0.191888 0.00480519 0.0085" rpy="1.5708 4.17746e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+      <material name="hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2_28_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.191888 0.00480519 0.0085" rpy="1.5708 4.17746e-15 -2.87979"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/hex_thin_nut_grade_a___b_m3__1f32078b7141c356c1ef5a853a7893b2.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_10 -->
+    <visual>
+      <origin xyz="-0.161582 0.0288225 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_10_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.161582 0.0288225 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_11 -->
+    <visual>
+      <origin xyz="-0.2315 0.000138475 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_11_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.2315 0.000138475 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_12 -->
+    <visual>
+      <origin xyz="-0.219423 0.0290184 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_12_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.219423 0.0290184 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_13 -->
+    <visual>
+      <origin xyz="-0.190738 -0.0408997 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_13_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.190738 -0.0408997 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_14 -->
+    <visual>
+      <origin xyz="-0.219618 -0.0288225 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_14_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.219618 -0.0288225 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_15 -->
+    <visual>
+      <origin xyz="-0.1497 -0.000138475 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_15_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.1497 -0.000138475 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_16 -->
+    <visual>
+      <origin xyz="-0.161777 -0.0290184 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+      <material name="ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83_16_material">
+        <color rgba="0.603922 0.647059 0.686275 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-0.161777 -0.0290184 0.0109157" rpy="1.71211e-14 -6.60507e-15 0.785398"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/ph_countersunk_flat_head_screw_m3x0_5_x_10__498a015df00194d306820c13d855bb83.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j3 -->
+  <link name="j3">
+    <inertial>
+      <origin xyz="-5.20416e-08 -0.000589747 -0.0255562" rpy="0 0 0"/>
+      <mass value="0.472139"/>
+      <inertia ixx="0.000174752" ixy="-1.78398e-10" ixz="-4.81677e-10" iyy="0.000138396" iyz="-2.40148e-06" izz="0.000166402"/>
+    </inertial>
+    <!-- Part 17_motor_mount -->
+    <visual>
+      <origin xyz="0 0.0226958 -0.026" rpy="3.14159 2.97e-28 -8.89659e-26"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17_motor_mount.stl"/>
+      </geometry>
+      <material name="17_motor_mount_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0226958 -0.026" rpy="3.14159 2.97e-28 -8.89659e-26"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17_motor_mount.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 17he19_2004s -->
+    <visual>
+      <origin xyz="-6.66134e-16 0.0226958 -0.026" rpy="1.5708 1.19164e-14 1.50155e-14"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17he19_2004s.stl"/>
+      </geometry>
+      <material name="17he19_2004s_material">
+        <color rgba="0.498039 0.498039 0.498039 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="-6.66134e-16 0.0226958 -0.026" rpy="1.5708 1.19164e-14 1.50155e-14"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17he19_2004s.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j4 -->
+  <link name="j4">
+    <inertial>
+      <origin xyz="0.00641107 -2.71031e-05 0.173865" rpy="0 0 0"/>
+      <mass value="0.349009"/>
+      <inertia ixx="0.00182535" ixy="-1.94889e-08" ixz="-0.000113386" iyy="0.00180915" iyz="4.73117e-07" izz="6.33015e-05"/>
+    </inertial>
+    <!-- Part horizontal_mount_17 -->
+    <visual>
+      <origin xyz="0.02 -1.36696e-15 0.22388" rpy="-3.10467e-14 -2.43904e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/horizontal_mount_17.stl"/>
+      </geometry>
+      <material name="horizontal_mount_17_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.02 -1.36696e-15 0.22388" rpy="-3.10467e-14 -2.43904e-14 1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/horizontal_mount_17.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 17hs08_1004s -->
+    <visual>
+      <origin xyz="1.9984e-15 -1.43635e-15 0.22388" rpy="-3.93789e-15 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17hs08_1004s.stl"/>
+      </geometry>
+      <material name="17hs08_1004s_material">
+        <color rgba="1 1 1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="1.9984e-15 -1.43635e-15 0.22388" rpy="-3.93789e-15 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17hs08_1004s.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part rotator -->
+    <visual>
+      <origin xyz="0.01 0.015 0.015" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/rotator.stl"/>
+      </geometry>
+      <material name="rotator_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.01 0.015 0.015" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/rotator.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Link j5 -->
+  <link name="j5">
+    <inertial>
+      <origin xyz="0.0208337 -0.0133688 -0.022147" rpy="0 0 0"/>
+      <mass value="0.217895"/>
+      <inertia ixx="6.46874e-05" ixy="2.21374e-06" ixz="1.50973e-06" iyy="4.24157e-05" iyz="-1.11553e-06" izz="4.52772e-05"/>
+    </inertial>
+    <!-- Part j6_mount -->
+    <visual>
+      <origin xyz="0.0336 0.0114273 0" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/j6_mount.stl"/>
+      </geometry>
+      <material name="j6_mount_material">
+        <color rgba="0.615686 0.811765 0.929412 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0336 0.0114273 0" rpy="1.5708 1.5708 0"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/j6_mount.stl"/>
+      </geometry>
+    </collision>
+    <!-- Part 17hs08_1004s_2 -->
+    <visual>
+      <origin xyz="0.0106 -0.0145727 -0.0225004" rpy="-1.5708 1.80893e-20 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17hs08_1004s.stl"/>
+      </geometry>
+      <material name="17hs08_1004s_2_material">
+        <color rgba="1 1 1 1.0"/>
+      </material>
+    </visual>
+    <collision>
+      <origin xyz="0.0106 -0.0145727 -0.0225004" rpy="-1.5708 1.80893e-20 -1.5708"/>
+      <geometry>
+        <mesh filename="package://robot_description/urdf/assets/17hs08_1004s.stl"/>
+      </geometry>
+    </collision>
+  </link>
+  <!-- Joint from j4 to j5 -->
+  <joint name="J5" type="revolute">
+    <origin xyz="0.02925 -1.31145e-15 0.22388" rpy="1.5708 0.713848 -1.5708"/>
+    <parent link="j4"/>
+    <child link="j5"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-3.99854" upper="2.28464"/>
+  </joint>
+  <!-- Joint from j3 to j4 -->
+  <joint name="J4" type="revolute">
+    <origin xyz="-8.32667e-16 0.0339458 -0.026" rpy="1.5708 8.51991e-05 -3.14159"/>
+    <parent link="j3"/>
+    <child link="j4"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-4.7123" upper="1.57088"/>
+  </joint>
+  <!-- Joint from j2 to j3 -->
+  <joint name="J3" type="revolute">
+    <origin xyz="-0.1906 -4.91006e-17 0.0381" rpy="-3.14159 -2.08945e-15 -1.3964e-09"/>
+    <parent link="j2"/>
+    <child link="j3"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-6.28319" upper="3.71518e-10"/>
+  </joint>
+  <!-- Joint from platform to j2 -->
+  <joint name="J2" type="revolute">
+    <origin xyz="-0.0820821 -0.071103 -0.03657" rpy="-2.42774 -1.5708 0"/>
+    <parent link="platform"/>
+    <child link="j2"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="0" upper="6.28319"/>
+  </joint>
+  <!-- Joint from base to platform -->
+  <joint name="J1" type="revolute">
+    <origin xyz="2.90478e-18 2.51725e-17 0.017" rpy="-3.14159 7.29843e-17 2.27611"/>
+    <parent link="base_link"/>
+    <child link="platform"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="10" lower="-2.28464" upper="3.99854"/>
+  </joint>
+</robot>

@@ -1,0 +1,33 @@
+{
+	"onshape_api": "https://cad.onshape.com",
+	"onshape_access_key": "72xRnPFdf7qbTXPaxpPbv065",
+	"onshape_secret_key": "8ux410pqE3d7lQ62AapUOwOAm3TCj9jCJ8kzlCO2ZqVwkQl5",
+	"packageName": "robot_description/urdf",
+	"robotName": "midas",
+	"documentId": "b8ac75c78771d7c79226a5ed",
+	"assemblyName": "Midas Assembly",
+	"outputFormat": "urdf",
+
+
+	"joint_properties":{
+		"J1": {
+			"max_effort": 1.85
+		},
+		
+		"J2": {
+			"max_effort": 24.8 
+		},
+
+		"J3": {
+			"max_effort": 7.4
+		},
+
+		"J4": {
+			"max_effort": 0.55
+		},
+		"J5": {
+			
+			"max_effort": 0.16
+		}
+	}
+}

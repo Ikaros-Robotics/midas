@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+	<let name="urdf_path" value="$(find-pkg-share robot_description)/urdf/robot.urdf"/>
+	<let name="robot_description" value="$(command 'cat $(var urdf_path)')"/>
+
+  	<node pkg="robot_state_publisher" exec="robot_state_publisher" name="midas">
+		<param name="robot_description" value="$(var robot_description)"/>
+  	</node>
+</launch>
