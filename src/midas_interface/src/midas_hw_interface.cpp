@@ -12,21 +12,13 @@ CallbackReturn MidasInterface::on_init(const hardware_interface::HardwareInfo &i
   RCLCPP_INFO(logger_, "Configuring...");
 
   time_ = std::chrono::system_clock::now();
-
-  //Joint names from URDF (need to add J6 here once it exists)
-  vector<string> joint_keys = {"J1", "J2", "J3", "J4", "J5"};
+  info_ = info;
 
   //Gets motor name from URDF info published by robot_state_publisher, if it exists
   //Everything gets initialized to 0
-  for(const auto& key : joint_keys)
+  for(const auto &joint : info_.joints)
   {
-    if (info_.hardware_parameters.find(key) == info_.hardware_parameters.end())
-    {
-        RCLCPP_ERROR_STREAM(logger_, "Hardware parameter key " << key << " is missing");
-        return CallbackReturn::ERROR;
-    }
-
-    motor_name_.emplace_back(info_.hardware_parameters.at(key));
+    motor_name_.emplace_back(joint.name);
     motor_pos_.emplace_back(0.0);
     motor_vel_.emplace_back(0.0);
     motor_cmd_.emplace_back(0.0);

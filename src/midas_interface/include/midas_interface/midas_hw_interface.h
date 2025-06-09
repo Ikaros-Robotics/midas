@@ -46,6 +46,8 @@ class MidasInterface : public hardware_interface::SystemInterface
 
 	    std::chrono::time_point<std::chrono::system_clock> time_;
 
+	    hardware_interface::HardwareInfo info_;
+
 		io_service io_;
 
 		unique_ptr<serial_port> serial_;
