@@ -81,6 +81,11 @@ CallbackReturn MidasInterface::on_activate(const rclcpp_lifecycle::State & /*&pr
 CallbackReturn MidasInterface::on_deactivate(const rclcpp_lifecycle::State & /*previous_state*/)
 {
   RCLCPP_INFO(logger_, "Stopping Controller...");
+  if (serial_ && serial_->is_open()){
+    serial_->close();
+    serial_.reset();
+    RCLCPP_INFO(logger_, "Serial Port Closed");
+  }
   return CallbackReturn::SUCCESS;
 }
 
