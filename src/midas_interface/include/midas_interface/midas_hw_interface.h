@@ -54,7 +54,7 @@ class MidasInterface : public hardware_interface::SystemInterface
 
 		string port_ = "/dev/ttyUSB0";
 
-		int baud_rate_ = 115200;
+		int baud_rate_ = 9600;
 
 		vector<string> motor_name_;
 
