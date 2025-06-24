@@ -35,6 +35,9 @@ CallbackReturn MidasInterface::on_init(const hardware_interface::HardwareInfo &i
 	  return CallbackReturn::ERROR;
 	}
 
+  auto sub_node = rclcpp::Node::make_shared("midas_interface_sub_node");
+  sub_pos_msg = sub_node->create_subscription<std_msgs::msg::Float64>("/stepper_pos_topic", 25, [this](const std_msgs::msg::Float64::SharedPtr msg){latest_value_ = msg->data;});
+
   RCLCPP_INFO(logger_, "Finished Configuration");
   return CallbackReturn::SUCCESS;
 }
@@ -82,7 +85,7 @@ CallbackReturn MidasInterface::on_deactivate(const rclcpp_lifecycle::State & /*p
 {
   RCLCPP_INFO(logger_, "Stopping Controller...");
   if (serial_ && serial_->is_open()){
-    serial_->close();
+    serial_->cancel();
     serial_.reset();
     RCLCPP_INFO(logger_, "Serial Port Closed");
   }
@@ -92,6 +95,7 @@ CallbackReturn MidasInterface::on_deactivate(const rclcpp_lifecycle::State & /*p
 
 return_type MidasInterface::read(const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
+  RCLCPP_INFO(logger_, "Latest subscribed position value: %f", latest_value_);
   return return_type::OK;
 }
 

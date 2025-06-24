@@ -8,6 +8,7 @@
 #include "rclcpp/time.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp_lifecycle/state.hpp"
+#include "std_msgs/msg/float64.hpp"
 
 #include "hardware_interface/system_interface.hpp"
 #include "hardware_interface/handle.hpp"
@@ -47,6 +48,10 @@ class MidasInterface : public hardware_interface::SystemInterface
 	    std::chrono::time_point<std::chrono::system_clock> time_;
 
 	    hardware_interface::HardwareInfo info_;
+
+	    rclcpp::Subscription<std_msgs::msg::Float64>::SharedPtr sub_pos_msg;
+
+	    double latest_value_ = 0.0;
 
 		io_service io_;
 
