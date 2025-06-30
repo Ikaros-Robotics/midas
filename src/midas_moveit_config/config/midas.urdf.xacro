@@ -3,12 +3,19 @@
     <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
 
     <!-- Import midas urdf file -->
-    <xacro:include filename="$(find robot_description)/urdf/robot.urdf" />
+    <xacro:include filename="$(find robot_description)/urdf_no_eff/robot.urdf" />
 
     <!-- Import control_xacro -->
     <xacro:include filename="midas.ros2_control.xacro" />
 
 
     <xacro:midas_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+    <gazebo>
+        <plugin name="ign_ros2_control::IgnitionROS2ControlPlugin" filename="libign_ros2_control-system.so">
+        <!-- Optional configuration (e.g., control period) -->
+        <parameters>$(find midas_moveit_config)/config/ros2_controllers.yaml</parameters>
+        </plugin>
+    </gazebo>
 
 </robot>
