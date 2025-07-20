@@ -26,163 +26,163 @@
       </geometry>
     </collision>
   </link>
-  <!-- Link j1 -->
-  <link name="j1">
+  <!-- Link link_j1 -->
+  <link name="link_j1">
     <inertial>
       <origin xyz="0.0149283 1.13911e-17 -0.0425258" rpy="0 0 0"/>
       <mass value="2.59"/>
       <inertia ixx="0.0025397" ixy="-1.54468e-19" ixz="1.99012e-06" iyy="0.00578814" iyz="-7.66882e-23" izz="0.00519517"/>
     </inertial>
-    <!-- Part j1 -->
+    <!-- Part link_j1 -->
     <visual>
       <origin xyz="0.015 1.38778e-17 0" rpy="3.14159 -0 -3.85344e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j1.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j1.stl"/>
       </geometry>
-      <material name="j1_material">
+      <material name="link_j1_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0.015 1.38778e-17 0" rpy="3.14159 -0 -3.85344e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j1.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j1.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link j2 -->
-  <link name="j2">
+  <!-- Link link_j2 -->
+  <link name="link_j2">
     <inertial>
       <origin xyz="0.0946009 5.96468e-17 -0.00988993" rpy="0 0 0"/>
       <mass value="1.75"/>
       <inertia ixx="0.000866374" ixy="2.74933e-19" ixz="2.16591e-05" iyy="0.00974116" iyz="-1.56994e-20" izz="0.0104808"/>
     </inertial>
-    <!-- Part j2 -->
+    <!-- Part link_j2 -->
     <visual>
       <origin xyz="1.04083e-17 1.38778e-17 -0.02" rpy="9.05872e-18 1.65284e-17 1.44658e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j2.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j2.stl"/>
       </geometry>
-      <material name="j2_material">
+      <material name="link_j2_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="1.04083e-17 1.38778e-17 -0.02" rpy="9.05872e-18 1.65284e-17 1.44658e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j2.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j2.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link j3 -->
-  <link name="j3">
+  <!-- Link link_j3 -->
+  <link name="link_j3">
     <inertial>
       <origin xyz="-5.95014e-05 -1.42028e-09 -0.0425214" rpy="0 0 0"/>
       <mass value="0.472"/>
       <inertia ixx="0.000507467" ixy="2.16011e-11" ixz="-6.11734e-07" iyy="0.000506392" iyz="-1.52903e-11" izz="0.000439352"/>
     </inertial>
-    <!-- Part j3 -->
+    <!-- Part link_j3 -->
     <visual>
       <origin xyz="8.10441e-18 0 0.01" rpy="3.14159 2.44496e-17 2.32773e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j3.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j3.stl"/>
       </geometry>
-      <material name="j3_material">
+      <material name="link_j3_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="8.10441e-18 0 0.01" rpy="3.14159 2.44496e-17 2.32773e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j3.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j3.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link j4 -->
-  <link name="j4">
+  <!-- Link link_j4 -->
+  <link name="link_j4">
     <inertial>
       <origin xyz="-2.37965e-06 -4.27791e-05 0.124489" rpy="0 0 0"/>
       <mass value="0.349"/>
       <inertia ixx="0.00185916" ixy="8.40082e-09" ixz="9.72773e-08" iyy="0.00185931" iyz="1.7491e-06" izz="3.91081e-05"/>
     </inertial>
-    <!-- Part j4 -->
+    <!-- Part link_j4 -->
     <visual>
       <origin xyz="0 0 -0.01" rpy="-1.5708 -4.64723e-16 1.51524"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j4.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j4.stl"/>
       </geometry>
-      <material name="j4_material">
+      <material name="link_j4_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 -0.01" rpy="-1.5708 -4.64723e-16 1.51524"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j4.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j4.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Link j5 -->
-  <link name="j5">
+  <!-- Link link_j5 -->
+  <link name="link_j5">
     <inertial>
       <origin xyz="-6.46436e-19 1.6094e-19 -0.0198388" rpy="0 0 0"/>
       <mass value="0.218"/>
       <inertia ixx="4.39867e-05" ixy="9.52638e-22" ixz="1.64262e-22" iyy="4.39867e-05" iyz="-2.50993e-23" izz="1.4006e-05"/>
     </inertial>
-    <!-- Part j5 -->
+    <!-- Part link_j5 -->
     <visual>
       <origin xyz="0 0 0.01" rpy="1.5708 3.42084e-18 -2.99849e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j5.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j5.stl"/>
       </geometry>
-      <material name="j5_material">
+      <material name="link_j5_material">
         <color rgba="0.615686 0.811765 0.929412 1"/>
       </material>
     </visual>
     <collision>
       <origin xyz="0 0 0.01" rpy="1.5708 3.42084e-18 -2.99849e-17"/>
       <geometry>
-        <mesh filename="package://robot_description/urdf/assets/j5.stl"/>
+        <mesh filename="package://robot_description/urdf/assets/link_j5.stl"/>
       </geometry>
     </collision>
   </link>
-  <!-- Joint from j4 to j5 -->
+  <!-- Joint from link_j4 to link_j5 -->
   <joint name="j5" type="revolute">
     <origin xyz="0.00083682 0.0150466 0.241638" rpy="-1.5708 0.00650835 3.08603"/>
-    <parent link="j4"/>
-    <child link="j5"/>
+    <parent link="link_j4"/>
+    <child link="link_j5"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Joint from j3 to j4 -->
+  <!-- Joint from link_j3 to link_j4 -->
   <joint name="j4" type="revolute">
     <origin xyz="0.0432636 0 -0.0643" rpy="-1.5708 -1.90593e-19 -1.5708"/>
-    <parent link="j3"/>
-    <child link="j4"/>
+    <parent link="link_j3"/>
+    <child link="link_j4"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Joint from j2 to j3 -->
+  <!-- Joint from link_j2 to link_j3 -->
   <joint name="j3" type="revolute">
     <origin xyz="0.1956 4.16334e-17 0" rpy="-3.14159 -8.24569e-17 -1.9746"/>
-    <parent link="j2"/>
-    <child link="j3"/>
+    <parent link="link_j2"/>
+    <child link="link_j3"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Joint from j1 to j2 -->
+  <!-- Joint from link_j1 to link_j2 -->
   <joint name="j2" type="revolute">
     <origin xyz="0.085 5.55112e-17 -0.03632" rpy="1.5708 0.934222 -1.5708"/>
-    <parent link="j1"/>
-    <child link="j2"/>
+    <parent link="link_j1"/>
+    <child link="link_j2"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
-  <!-- Joint from base to j1 -->
+  <!-- Joint from base to link_j1 -->
   <joint name="j1" type="revolute">
     <origin xyz="0.323698 -0.00379571 0.0109293" rpy="0 -0 -0.239754"/>
     <parent link="base"/>
-    <child link="j1"/>
+    <child link="link_j1"/>
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
