@@ -1,9 +1,10 @@
 {
 	"url": "https://cad.onshape.com/documents/95fd851c76f3f6bde8c085de/w/d547567e27705c867ac23e03/e/46c7eb3c59f888e21815eca3",
   "packageName": "robot_description/urdf",
-	"robotName": "midas",
+	"robotName": "robot_description",
 	"assemblyName": "Midas Assembly",
-	"outputFormat": "urdf",
+	"outputFormat": "sdf",
+  "assets_dir": "src/robot_description/urdf/assets",
 
 
 	"joint_properties":{
