@@ -3,7 +3,7 @@
   "packageName": "robot_description/urdf",
 	"robotName": "robot_description",
 	"assemblyName": "Midas Assembly",
-	"outputFormat": "sdf",
+	"outputFormat": "urdf",
   "assets_dir": "src/robot_description/urdf/assets",
 
 

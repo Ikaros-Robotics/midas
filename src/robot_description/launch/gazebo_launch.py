@@ -14,7 +14,7 @@ def generate_launch_description():
     pkg_share = get_package_share_directory('robot_description')
     
     # Path to your SDF model
-    robot_sdf = os.path.join(pkg_share, 'urdf', 'robot.sdf')
+    robot_sdf = os.path.join(pkg_share, 'urdf', 'robot.urdf')
     
     # World file
     default_world = os.path.join(pkg_share, 'world', 'empty_world.sdf')
@@ -95,6 +95,6 @@ def generate_launch_description():
         joint_state_publisher_node,
         gz_sim,
         spawn_robot,
-        load_joint_state_broadcaster,
-        load_joint_trajectory_controller,
+        #load_joint_state_broadcaster,
+        #load_joint_trajectory_controller,
     ])
