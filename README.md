@@ -10,7 +10,7 @@ source the install
 `source install/setup.bash`
 
 launch the demo
-`ros2 launch midas_moveit_config`
+`ros2 launch simple_moveit demo.launch.py
 
 add the motion planner topic to rviz using the add button found on the bottom
 - the interactive marker is missing. to manipulate joints you will have to slide them in joints tab
