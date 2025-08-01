@@ -1,0 +1,9 @@
+<library path="midas_interface">
+  <class name="midas_interface/MidasInterface"
+         type="MidasInterface"
+         base_class_type="hardware_interface::SystemInterface">
+    <description>
+      Hardware Interface for 6DOF robotic arm controller.
+    </description>
+  </class>
+</library>
