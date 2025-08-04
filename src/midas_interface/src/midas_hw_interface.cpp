@@ -20,7 +20,6 @@ CallbackReturn MidasInterface::on_init(const hardware_interface::HardwareInfo &i
   {
     motor_name_.emplace_back(joint.name);
     motor_pos_.emplace_back(0.0);
-    motor_vel_.emplace_back(0.0);
     motor_cmd_.emplace_back(0.0);
   }
 
@@ -35,9 +34,6 @@ CallbackReturn MidasInterface::on_init(const hardware_interface::HardwareInfo &i
 	  return CallbackReturn::ERROR;
 	}
 
-  auto sub_node = rclcpp::Node::make_shared("midas_interface_sub_node");
-  sub_pos_msg = sub_node->create_subscription<std_msgs::msg::Float64>("/stepper_pos_topic", 25, [this](const std_msgs::msg::Float64::SharedPtr msg){latest_value_ = msg->data;});
-
   RCLCPP_INFO(logger_, "Finished Configuration");
   return CallbackReturn::SUCCESS;
 }
@@ -51,7 +47,6 @@ vector<hardware_interface::StateInterface> MidasInterface::export_state_interfac
   //hardware_interface::StateInterface(name, interface type, &value)
   for(size_t i = 0; i < motor_name_.size(); ++i)
   {
-    state_interfaces.emplace_back(hardware_interface::StateInterface(motor_name_[i], hardware_interface::HW_IF_VELOCITY, &motor_vel_[i]));
     state_interfaces.emplace_back(hardware_interface::StateInterface(motor_name_[i], hardware_interface::HW_IF_POSITION, &motor_pos_[i]));
   }
 
@@ -95,7 +90,29 @@ CallbackReturn MidasInterface::on_deactivate(const rclcpp_lifecycle::State & /*p
 
 return_type MidasInterface::read(const rclcpp::Time & /*time*/, const rclcpp::Duration & /*period*/)
 {
-  RCLCPP_INFO(logger_, "Latest subscribed position value: %f", latest_value_);
+  try {
+    boost::asio::streambuf buf;
+    boost::asio::read_until(*serial_, buf, '\n');
+    std::istream is(&buf);
+    std::string line;
+    std::getline(is, line);
+
+    json feedback = json::parse(line);
+
+    for (size_t i = 0; i < motor_name_.size(); ++i) {
+      std::string key = "J" + std::to_string(i + 1) + "POS";
+      if (feedback.contains(key)) {
+        float revolutions = feedback[key];
+        float radians = revolutions * 2.0 * M_PI;
+        motor_pos_[i] = radians;
+        // Velocity is constant for now
+      }
+    }
+  } catch (std::exception& e) {
+    RCLCPP_ERROR(logger_, "Serial Read Error: %s", e.what());
+    return return_type::ERROR;
+  }
+
   return return_type::OK;
 }
 
@@ -117,7 +134,6 @@ return_type MidasInterface::write(const rclcpp::Time & /*time*/, const rclcpp::D
     motor_data["Motor Data"].push_back({
       { "name", motor_name_[i] },
       { "pos", motor_pos_[i] },
-      { "vel", motor_vel_[i] }
     });
   };
 

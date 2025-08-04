@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:macro name="robot_description_ros2_control" params="name initial_positions_file">
+      <xacro:if value="$(arg sim_mode)">
         <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
-
-        <ros2_control name="${name}" type="system">
+        
+        <ros2_control name="sim_mode" type="system">
             <hardware>
                 <!-- By default, set up controllers for simulation. This won't work on real hardware -->
                 <plugin>mock_components/GenericSystem</plugin>
@@ -43,7 +44,67 @@
                 </state_interface>
                 <state_interface name="velocity"/>
             </joint>
-
         </ros2_control>
+      </xacro:if>
+
+      <xacro:unless value="$(arg sim_mode)">
+        <xacro:property name="initial_positions" value="${load_yaml(initial_positions_file)['initial_positions']}"/>
+          <ros2_control name="real_robot" type="system">
+              <hardware>
+                  <plugin>midas_interface/MidasInterface</plugin>
+                  <param name="j1">j1</param>
+                  <param name="j2">j2</param>
+                  <param name="j3">j3</param>
+                  <param name="j4">j4</param>
+                  <param name="j5">j5</param>
+              </hardware>
+              <joint name="j1">
+                  <command_interface name="position">
+                      <param name="min">-360</param>
+                      <param name="max">360</param>
+                  </command_interface>
+                  <state_interface name="position">
+                    <param name="initial_value">${initial_positions['j1']}</param>
+                  </state_interface>
+              </joint>
+              <joint name="j2">
+                  <command_interface name="position">
+                      <param name="min">-360</param>
+                      <param name="max">360</param>
+                  </command_interface>
+                  <state_interface name="position">
+                      <param name="initial_value">${initial_positions['j2']}</param>
+                  </state_interface>
+              </joint>
+              <joint name="j3">
+                  <command_interface name="position">
+                      <param name="min">-360</param>
+                      <param name="max">360</param>
+                  </command_interface>
+                  <state_interface name="position">
+                      <param name="initial_value">${initial_positions['j3']}</param>
+                  </state_interface>                  
+              </joint>
+              <joint name="j4">
+                  <command_interface name="position">
+                      <param name="min">-360</param>
+                      <param name="max">360</param>
+                  </command_interface>
+                  <state_interface name="position">
+                      <param name="initial_value">${initial_positions['j4']}</param>
+                  </state_interface>
+              </joint>
+              <joint name="j5">
+                  <command_interface name="position">
+                      <param name="min">-360</param>
+                      <param name="max">360</param>
+                  </command_interface>
+                  <state_interface name="position">
+                      <param name="initial_value">${initial_positions['j5']}</param>
+                  </state_interface>
+              </joint>
+          </ros2_control>
+      </xacro:unless>
+
     </xacro:macro>
 </robot>

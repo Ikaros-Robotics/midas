@@ -28,4 +28,3 @@ arm_planner_controller:
       - position
     state_interfaces:
       - position
-      - velocity
