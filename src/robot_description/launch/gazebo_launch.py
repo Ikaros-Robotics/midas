@@ -45,6 +45,6 @@ def generate_launch_description():
         package_arg,
         model_arg,
         empty_world_launch,
-        #description_launch_py,
-        #urdf_spawner_node,
+        description_launch_py,
+        urdf_spawner_node,
     ])
