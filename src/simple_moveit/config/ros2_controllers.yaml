@@ -2,6 +2,7 @@
 controller_manager:
   ros__parameters:
     update_rate: 100  # Hz
+    use_sim_time: true
 
     end_eff_controller:
       type: position_controllers/GripperActionController
@@ -14,9 +15,12 @@ controller_manager:
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
 
+      
 end_eff_controller:
   ros__parameters:
     joint: j5
+
+
 arm_planner_controller:
   ros__parameters:
     joints:

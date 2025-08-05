@@ -2,6 +2,14 @@
 <!-- Generated using onshape-to-robot -->
 <!-- Onshape https://cad.onshape.com/documents/95fd851c76f3f6bde8c085de/w/d547567e27705c867ac23e03/e/46c7eb3c59f888e21815eca3 -->
 <robot name="robot_description">
+
+  <link name="world"/>
+
+  <joint name="world_to_base" type="fixed">
+    <parent link="world"/>
+    <child link="base"/>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </joint>
   <!-- Link base -->
   <link name="base">
     <inertial>
@@ -186,4 +194,13 @@
     <axis xyz="0 0 1"/>
     <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
+
+    <!-- Add before closing </robot> tag -->
+  <gazebo>
+    <plugin filename="libgazebo_ros2_control.so" name="gazebo_ros2_control">
+      <parameters>$(find simple_moveit)/config/ros2_controllers.yaml</parameters>
+    </plugin>
+  </gazebo>
+
+
 </robot>

@@ -9,12 +9,12 @@ moveit_simple_controller_manager:
 
   arm_planner_controller:
     type: FollowJointTrajectory
+    action_ns: follow_joint_trajectory
     joints:
       - j1
       - j2
       - j3
       - j4
-    action_ns: follow_joint_trajectory
   end_eff_controller:
     type: GripperCommand
     joints:
