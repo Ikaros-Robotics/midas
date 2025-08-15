@@ -44,7 +44,8 @@ def generate_launch_description():
         'use_sim_time': 'true',
             'debug': 'true',
             'gui': 'true',
-            'paused': 'true'
+            'paused': 'false',
+            'world': [get_package_share_directory('simple_moveit'), 'worlds','grav_world.world']
         }.items()
     )
 

@@ -9,16 +9,19 @@ default_acceleration_scaling_factor: 0.1
 # Joint limits can be turned off with [has_velocity_limits, has_acceleration_limits]
 joint_limits:
   j1:
+    effort: 1.85
     has_velocity_limits: true
     max_velocity: 10.0
     has_acceleration_limits: false
     max_acceleration: 0
   j2:
+    effort: 24.8
     has_velocity_limits: true
     max_velocity: 10.0
     has_acceleration_limits: false
     max_acceleration: 0
   j3:
+    effort: 7.4
     has_velocity_limits: true
     max_velocity: 10.0
     has_acceleration_limits: false

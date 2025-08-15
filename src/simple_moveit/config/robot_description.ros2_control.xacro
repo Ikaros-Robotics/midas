@@ -6,42 +6,79 @@
         <ros2_control name="${name}" type="system">
             <hardware>
                 <!-- By default, set up controllers for simulation. This won't work on real hardware -->
-        <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+              <plugin>gazebo_ros2_control/GazeboSystem</plugin>
+              <!-- These params force effort interface activation -->
+              <param name="robot_sim_type">gazebo_sim</param>
+              <param name="use_sim_time">true</param>
             </hardware>
+
             <joint name="j1">
+                <dynamics>
+                  <damping>0.1</damping>  <!-- Friction value (0.1-1.0 is reasonable) -->
+                  <friction>0.5</friction>  <!-- Static friction -->
+                </dynamics>
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['j1']}</param>
                 </state_interface>
-                <state_interface name="velocity"/>
+              <state_interface name="velocity"/>
+              <state_interface name="effort"/>
             </joint>
+
+
             <joint name="j2">
+                <dynamics>
+                  <damping>0.1</damping>  <!-- Friction value (0.1-1.0 is reasonable) -->
+                  <friction>0.5</friction>  <!-- Static friction -->
+                </dynamics>
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['j2']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <state_interface name="effort"/>
             </joint>
+
+
             <joint name="j3">
+                <dynamics>
+                  <damping>0.1</damping>  <!-- Friction value (0.1-1.0 is reasonable) -->
+                  <friction>0.5</friction>  <!-- Static friction -->
+                </dynamics>
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['j3']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <state_interface name="effort"/>
             </joint>
+
+
             <joint name="j4">
+                <dynamics>
+                  <damping>0.1</damping>  <!-- Friction value (0.1-1.0 is reasonable) -->
+                  <friction>0.5</friction>  <!-- Static friction -->
+                </dynamics>
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['j4']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <state_interface name="effort"/>
             </joint>
+
+
             <joint name="j5">
+                <dynamics>
+                  <damping>0.1</damping>  <!-- Friction value (0.1-1.0 is reasonable) -->
+                  <friction>0.5</friction>  <!-- Static friction -->
+                </dynamics>
                 <command_interface name="position"/>
                 <state_interface name="position">
                   <param name="initial_value">${initial_positions['j5']}</param>
                 </state_interface>
                 <state_interface name="velocity"/>
+                <state_interface name="effort"/>
             </joint>
 
         </ros2_control>

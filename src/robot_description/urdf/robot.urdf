@@ -3,19 +3,20 @@
 <!-- Onshape https://cad.onshape.com/documents/95fd851c76f3f6bde8c085de/w/d547567e27705c867ac23e03/e/46c7eb3c59f888e21815eca3 -->
 <robot name="robot_description">
 
-  <link name="world"/>
 
-  <joint name="world_to_base" type="fixed">
-    <parent link="world"/>
-    <child link="base"/>
-    <origin xyz="0 0 0" rpy="0 0 0"/>
-  </joint>
   <!-- Link base -->
   <link name="base">
     <inertial>
       <origin xyz="3.03802e-22 -2.49325e-05 0.0512803" rpy="0 0 0"/>
       <mass value="8"/>
       <inertia ixx="0.03558" ixy="0" ixz="0" iyy="0.0174346" iyz="9.23893e-06" izz="0.0389875"/>
+      <gazebo reference="base">
+        <mu1>1.0</mu1>  <!-- Friction coefficients -->
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>  <!-- Contact stiffness -->
+        <kd>100.0</kd>      <!-- Contact damping -->
+        <gravity>true</gravity>  <!-- Explicitly enable gravity -->
+      </gazebo>
     </inertial>
     <!-- Part base -->
     <visual>
@@ -40,6 +41,13 @@
       <origin xyz="0.0149002 -2.26837e-18 -0.0425285" rpy="0 0 0"/>
       <mass value="2.59"/>
       <inertia ixx="0.00254072" ixy="0" ixz="2.44349e-06" iyy="0.00578583" iyz="0" izz="0.00519265"/>
+      <gazebo reference="link_j1">
+        <mu1>1.0</mu1>  <!-- Friction coefficients -->
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>  <!-- Contact stiffness -->
+        <kd>100.0</kd>      <!-- Contact damping -->
+        <gravity>true</gravity>  <!-- Explicitly enable gravity -->
+      </gazebo>
     </inertial>
     <!-- Part link_j1 -->
     <visual>
@@ -65,6 +73,13 @@
       <mass value="1.75"/>
       <inertia ixx="0.000858613" ixy="1.18735e-32" ixz="2.5528e-05" iyy="0.00951707" iyz="1.42479e-34" izz="0.0102488"/>
     </inertial>
+      <gazebo reference="link_j2">
+        <mu1>1.0</mu1>  <!-- Friction coefficients -->
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>  <!-- Contact stiffness -->
+        <kd>100.0</kd>      <!-- Contact damping -->
+        <gravity>true</gravity>  <!-- Explicitly enable gravity -->
+      </gazebo>
     <!-- Part link_j2 -->
     <visual>
       <origin xyz="0 -3.06162e-19 -0.02" rpy="1.2326e-32 1.2326e-32 9.86076e-31"/>
@@ -89,6 +104,13 @@
       <mass value="0.472"/>
       <inertia ixx="0.00050765" ixy="3.58382e-11" ixz="-8.78892e-07" iyy="0.000506109" iyz="-2.73616e-11" izz="0.000439176"/>
     </inertial>
+      <gazebo reference="link_j3">
+        <mu1>1.0</mu1>  <!-- Friction coefficients -->
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>  <!-- Contact stiffness -->
+        <kd>100.0</kd>      <!-- Contact damping -->
+        <gravity>true</gravity>  <!-- Explicitly enable gravity -->
+      </gazebo>
     <!-- Part link_j3 -->
     <visual>
       <origin xyz="-2.36658e-30 0 0.01" rpy="3.14159 1.47911e-31 1.97215e-31"/>
@@ -113,6 +135,13 @@
       <mass value="0.349"/>
       <inertia ixx="0.00185365" ixy="1.88523e-12" ixz="-6.23153e-12" iyy="0.00185386" iyz="2.49591e-06" izz="3.91041e-05"/>
     </inertial>
+      <gazebo reference="link_j4">
+        <mu1>1.0</mu1>  <!-- Friction coefficients -->
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>  <!-- Contact stiffness -->
+        <kd>100.0</kd>      <!-- Contact damping -->
+        <gravity>true</gravity>  <!-- Explicitly enable gravity -->
+      </gazebo>
     <!-- Part link_j4 -->
     <visual>
       <origin xyz="-5.55112e-17 1.38778e-17 -0.009" rpy="-1.5708 -1.77636e-15 1.5708"/>
@@ -137,6 +166,13 @@
       <mass value="0.218"/>
       <inertia ixx="4.41782e-05" ixy="-7.36866e-08" ixz="-2.14607e-08" iyy="4.40886e-05" iyz="1.42459e-08" izz="1.3973e-05"/>
     </inertial>
+      <gazebo reference="link_j5">
+        <mu1>1.0</mu1>  <!-- Friction coefficients -->
+        <mu2>1.0</mu2>
+        <kp>1000000.0</kp>  <!-- Contact stiffness -->
+        <kd>100.0</kd>      <!-- Contact damping -->
+        <gravity>true</gravity>  <!-- Explicitly enable gravity -->
+      </gazebo>
     <!-- Part link_j5 -->
     <visual>
       <origin xyz="0 0 0.01" rpy="1.5708 -0 0"/>
@@ -154,13 +190,25 @@
       </geometry>
     </collision>
   </link>
+  
+  <link name="payload">
+    <inertial>
+      <mass value="2.0"/>  <!-- 2kg payload -->
+      <inertia ixx="0.01" ixy="0" ixz="0" iyy="0.01" iyz="0" izz="0.01"/>
+    </inertial>
+  </link>
+
+  <joint name="payload_joint" type="fixed">
+    <parent link="link_j5"/>  <!-- Attach to last link -->
+    <child link="payload"/>
+  </joint>
   <!-- Joint from link_j4 to link_j5 -->
   <joint name="j5" type="revolute">
     <origin xyz="1.11022e-16 0.0160737 0.242638" rpy="-1.5708 -1.66533e-15 3.14159"/>
     <parent link="link_j4"/>
     <child link="link_j5"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <limit effort="0.16" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from link_j3 to link_j4 -->
   <joint name="j4" type="revolute">
@@ -168,7 +216,7 @@
     <parent link="link_j3"/>
     <child link="link_j4"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <limit effort="0.55" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from link_j2 to link_j3 -->
   <joint name="j3" type="revolute">
@@ -176,7 +224,7 @@
     <parent link="link_j2"/>
     <child link="link_j3"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <limit effort="7.4" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from link_j1 to link_j2 -->
   <joint name="j2" type="revolute">
@@ -184,7 +232,7 @@
     <parent link="link_j1"/>
     <child link="link_j2"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <limit effort="24.8" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
   <!-- Joint from base to link_j1 -->
   <joint name="j1" type="revolute">
@@ -192,7 +240,7 @@
     <parent link="base"/>
     <child link="link_j1"/>
     <axis xyz="0 0 1"/>
-    <limit effort="10" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
+    <limit effort="1.85" velocity="10" lower="-3.141592653589793" upper="3.141592653589793"/>
   </joint>
 
     <!-- Add before closing </robot> tag -->
@@ -202,5 +250,65 @@
     </plugin>
   </gazebo>
 
+  <gazebo>
+    <physics type="ode">
+      <gravity>0 0 -9.8</gravity>
+    </physics>
+  </gazebo>
 
+  <!-- Transmission elements for effort reading -->
+  <transmission name="j1_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="j1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="j1_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="j2_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="j2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="j2_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="j3_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="j3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="j3_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="j4_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="j4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="j4_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+  <transmission name="j5_trans">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="j5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="j5_motor">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
 </robot>

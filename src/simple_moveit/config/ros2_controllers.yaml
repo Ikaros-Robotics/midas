@@ -20,6 +20,9 @@ end_eff_controller:
   ros__parameters:
     joint: j5
 
+joint_state_broadcaster:
+  ros__parameters:
+    extra_state_interfaces: [effort]  # Captures effort from hardware
 
 arm_planner_controller:
   ros__parameters:
