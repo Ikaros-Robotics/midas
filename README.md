@@ -3,8 +3,14 @@ make sure you have the moveit binaries installed.
 all you need is 
 `sudo apt install ros-humble-moveit`
 
+Install dependencies for Ignition Gazebo
 
-build the packages with colcon build
+`sudo apt install ros-humble-ros-gz`
+
+`sudo apt install ros-humble-ign-ros2-control`
+
+build the packages with 
+`colcon build`
 
 source the install
 `source install/setup.bash`
