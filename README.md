@@ -15,17 +15,8 @@ build the packages with
 source the install
 `source install/setup.bash`
 
-launch ignition gazebo first
-`ros2 launch simple_moveit ign_gz.launch.py`
-
 launch the demo
 `ros2 launch simple_moveit demo.launch.py`
-
-use sim time :
-
-`ros2 param set /rviz use_sim_time true`
-
-`ros2 param set /move_group use_sim_time true`
 
 add the motion planner topic to rviz using the add button found on the bottom
 - the interactive marker is missing. to manipulate joints you will have to slide them in joints tab
